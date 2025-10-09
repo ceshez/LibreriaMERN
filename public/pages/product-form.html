@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Libro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/header.js" defer></script>
+</head>
+<div id="appHeader"></div>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <form id="bookForm" class="bg-white p-6 rounded-xl shadow w-[420px] space-y-3">
+    <h1 class="text-xl font-bold">Libro</h1>
+    <input name="titulo" placeholder="Título" class="w-full border px-3 py-2 rounded" required>
+    <input name="autor" placeholder="Autor" class="w-full border px-3 py-2 rounded">
+    <textarea name="descripcion" placeholder="Descripción" class="w-full border px-3 py-2 rounded"></textarea>
+    <label class="text-sm">Fecha de publicación
+      <input name="fecha" type="date" class="w-full border px-3 py-2 rounded">
+    </label>
+    <select name="tema" class="w-full border px-3 py-2 rounded">
+      <option>Historia</option><option>Ciencia</option><option selected>Novela</option><option>Infantil</option>
+    </select>
+    <label class="text-sm">Stock total
+      <input name="stockTotal" type="number" min="0" value="1" class="w-full border px-3 py-2 rounded">
+    </label>
+    <div class="flex gap-2">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Guardar</button>
+      <a href="/pages/products.html" class="px-4 py-2 border rounded">Volver</a>
+    </div>
+  </form>
+  <script src="/js/products.js"></script>
+</body>
+</html>

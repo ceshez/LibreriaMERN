@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/header.js" defer></script>
+</head>
+<div id="appHeader"></div>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Inventario de Libros</h1>
+    <div class="flex gap-2">
+      <a href="/pages/product-form.html" class="bg-blue-600 text-white px-3 py-2 rounded">+ Nuevo</a>
+      <button id="logoutBtn" class="border px-3 py-2 rounded">Salir</button>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6">
+    <div class="bg-white rounded-xl shadow overflow-x-auto">
+      <table class="min-w-full">
+        <thead class="bg-gray-100 text-left text-sm">
+          <tr>
+            <th class="p-3">Título</th>
+            <th class="p-3">Autor</th>
+            <th class="p-3">Fecha</th>
+            <th class="p-3">Tema</th>
+            <th class="p-3">Stock</th>
+          </tr>
+        </thead>
+        <tbody id="rows" class="text-sm"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="/js/products.js"></script>
+</body>
+</html>

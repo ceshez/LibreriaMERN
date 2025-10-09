@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/header.js" defer></script>
+</head>
+<div id="appHeader"></div>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <form id="loginForm" class="bg-white p-6 rounded-xl shadow w-80 space-y-3">
+    <h1 class="text-xl font-bold">Iniciar sesión</h1>
+    <input name="correo" type="email" placeholder="Correo" class="w-full border px-3 py-2 rounded" required>
+    <input name="password" type="password" placeholder="Contraseña" class="w-full border px-3 py-2 rounded" required>
+    <button class="bg-blue-600 text-white w-full py-2 rounded">Entrar</button>
+    <p class="text-sm">¿No tienes cuenta? <a href="/pages/register.html" class="text-blue-600 underline">Registrarse</a></p>
+  </form>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
